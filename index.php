@@ -1,6 +1,5 @@
 <?php
-  if (empty($_GET['game'])) $game = "tux";
-  else $game = $_GET['game'];
+  $game = (empty($_GET['game'])) ? "tux" : $_GET['game'];
   switch($game)
   {
     case "heli":
